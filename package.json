@@ -1,0 +1,33 @@
+{
+  "name": "mcp_review_code_tool",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "build": "tsc && shx chmod +x dist/*.js"
+  },
+  "keywords": [
+    "mcp",
+    "modelcontextprotocol",
+    "review code",
+    "openai"
+  ],
+  "author": "",
+  "license": "ISC",
+  "description": "A code review tool based on Model Context Protocol (MCP) that leverages OpenAI's capabilities for intelligent code analysis and review. | 基于模型上下文协议(MCP)的代码审查工具，利用OpenAI的能力进行智能代码分析和审查。",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.7.0",
+    "node-sloc": "^0.2.1",
+    "normalize-path": "^3.0.0",
+    "openai": "^4.90.0",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.6",
+    "cross-env": "^7.0.3",
+    "esbuild": "^0.25.1",
+    "shx": "^0.4.0",
+    "terser": "^5.39.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  }
+}

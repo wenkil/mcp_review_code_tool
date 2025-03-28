@@ -1,0 +1,16 @@
+{
+  "mcpServers": {
+    "代码评审工具": {
+      "command": "node",
+      "args": [
+        "your path/dist/mcp_code_review.js"
+      ],
+      "cwd": "your path",
+      "env": {
+        "OPENAI_API_KEY": "your api key",
+        "OPENAI_API_BASE": "https://openrouter.ai/api/v1",
+        "OPENAI_API_MODEL": "qwen/qwen-2.5-coder-32b-instruct:free"
+      }
+    }
+  }
+}
