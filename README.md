@@ -1,6 +1,6 @@
 # mcp_review_code_tool 项目说明文档
 
-## 欢迎给个Star~~
+## 欢迎Star~~
 
 ## 项目简介
 mcp_review_code_tool 是一个基于 Model Context Protocol (MCP) 的server tool项目。
@@ -8,6 +8,9 @@ mcp_review_code_tool 是一个基于 Model Context Protocol (MCP) 的server tool
 
 开发调试记录：
 https://wenkil.github.io/2025/03/28/开发一个本地MCP工具进行代码review/
+
+## 最新更新
+🔥 **新增Web版代码审查工具**：代码逻辑改为了支持通过Web界面进行本地代码审查而非MCP调用，详情请查看 [web_code_review/README.md](web_code_review/README.md)，支持多文件上传、代码质量评估和可视化报告。
 
 ## 技术栈
 - Node.js 18+
