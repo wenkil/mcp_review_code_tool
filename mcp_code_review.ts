@@ -106,7 +106,7 @@ async function analyzeLLM(filePath: string, content: string) {
       - **文档化（Documentation）**：代码附带的说明和文档质量。
     2. **生成总体报告**：
       - 将所有分步信息整理成一个markdown结构。
-      - 内容应包括：第一部分：文件列表汇总（每个文件的总行数、注释行数、代码行数、总注释率、代码行数注释率评分， 6维评分，得分比较低或者行数比较多；第二部分每一个文件的功能描述，以及在六个质量因素上的评分以及说明；第三部分，总结
+      - 内容应包括：第一部分：文件列表汇总（每个文件的总行数、注释行数、代码行数、总注释率、代码行数注释率评分， 6维评分平均分；第二部分每一个文件的功能描述，以及在六个质量因素上的评分以及说明；第三部分，总结
 
       以下是要评审的代码：
       \`\`\`
@@ -201,7 +201,7 @@ async function processFile(fp: string): Promise<ProcessResult> {
  */
 server.tool(
   "reviewCode_tool",
-  "工具描述：根据要求进行代码评审，总结代码质量，传参为filePaths数组，数组元素是每个文件的完整地址",
+  "工具描述：根据要求进行代码评审，总结代码质量，传参为filePaths数组，数组元素是每个文件的绝对路径地址",
   { filePaths: z.array(z.string()) },
   async ({ filePaths }) => {
     // 使用 Promise.all 并行处理所有文件
